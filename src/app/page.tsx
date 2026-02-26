@@ -109,20 +109,20 @@ export default function Home() {
           transition={{ duration: 1 }}
           className="z-10 text-center px-4"
         >
-          {/* Floating Buttercup */}
+          {/* Floating Character */}
           <motion.div
             initial={{ scale: 0, rotate: -20 }}
             animate={{ scale: 1.2, rotate: 0 }}
             transition={{ type: "spring", stiffness: 100, delay: 0.5 }}
-            className="mb-8 relative w-40 h-40 md:w-56 md:h-56 mx-auto group"
+            className="mb-8 relative w-48 h-48 md:w-64 md:h-64 mx-auto group"
           >
             <div className={cn(
               "absolute inset-0 blur-3xl rounded-full transition-colors",
               !isBoldMode ? "bg-rose-gold/30" : "bg-buttercup-green/20"
             )} />
             <Image
-              src="/buttercup.png"
-              alt="Buttercup"
+              src="/buttercup1.png"
+              alt="Buttercup Character"
               fill
               className="object-contain drop-shadow-[0_0_20px_rgba(151,188,98,0.5)] group-hover:scale-110 transition-transform duration-500"
             />
@@ -362,8 +362,8 @@ export default function Home() {
           <h2 className="text-4xl font-playfair mb-8">The Forgiveness Wall</h2>
           <div className="glass-card mb-12 relative">
             <Quote className="absolute top-4 left-4 text-[#2ECC71]/20 w-12 h-12" />
-            <p className="text-xl italic text-gray-300 py-8">
-              "For every fight that tried to break us, we built a bridge that made us stronger."
+            <p className="text-xl italic text-gray-300 py-12 px-8">
+              "For every fight that tried to break us, we built a bridge that made us stronger. You're my queen, even when we fight."
             </p>
             <div className="h-px bg-gradient-to-r from-transparent via-[#2ECC71] to-transparent" />
           </div>
