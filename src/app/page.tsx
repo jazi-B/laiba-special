@@ -42,10 +42,7 @@ export default function Home() {
   const [isBoldMode, setIsBoldMode] = useState(true);
 
   useEffect(() => {
-    const startDate = new Date("2023-02-26");
-    const now = new Date();
-    const diff = Math.floor((now.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
-    setDaysElapsed(diff);
+    setDaysElapsed(636);
   }, []);
 
   const { scrollYProgress } = useScroll();
