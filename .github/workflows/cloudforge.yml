@@ -1,0 +1,16 @@
+  - name: 🏗️ Setup Node.js
+    uses: actions/setup-node@v4
+    with:
+      node-version: 20
+      cache: 'npm'
+
+  - name: 🔧 Install & Build
+    run: |
+      npm install
+      npm run build --if-present
+
+  - name: 🌐 Deploy to CloudForge Edge
+    uses: JamesIves/github-pages-deploy-action@v4
+    with:
+      folder: dist # CloudForge will look in 'dist' or 'build'
+      branch: gh-pages
